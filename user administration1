@@ -1,0 +1,7 @@
+groupadd admin
+useradd -G admin harry
+useradd -s /sbin/nologin sarah
+
+vi /etc/passwd
+vi /etc/group
+vi /etc/shadow
