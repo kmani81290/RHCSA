@@ -1,0 +1,11 @@
+#nmcli connection modify "Syetem eth0" ipv4.addresses "172.25.27.11/24 172.25.27.254"
+
+DNS Modify
+
+#nmcli connection modify "System eth0" ipv4.dns 172.25.254.254 ipv4.method static
+
+up the connection
+
+#nmcli connection up "System etho"
+#hostname -i
+
