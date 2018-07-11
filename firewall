@@ -1,2 +1,17 @@
 #systemctl stop firewalld.service
-systemxttl disable fire
+#systemxctl disable firewalld.service
+
+SELINUX
+
+#vim /etc/selinux/config
+
+permissive to change into enforcing
+selinux=enforcing
+
+reboot
+
+To check selinux
+
+#getenforce
+enforcing
+
