@@ -1,0 +1,26 @@
+yum install authconfig-gtk autofs sssd -y
+from the base machine terminal take remote in gui
+sshroot@172.168.17,22 -X
+
+
+#authconfig-gtk
+
+user account configuration and data base
+
+
+LDAP search DN
+dc=example,dc=com
+
+LDAP Server=classroom.example.com
+
+Mark tls 
+dowload url & copy paste
+
+authentication method
+ldap password
+
+restart services
+
+su - ldapuser27
+
+exit
