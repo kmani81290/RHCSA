@@ -1,0 +1,55 @@
+directory permissions
+
+mkdir -p /common/admin
+chgrp admin /common/admin
+ls -ld /common/admin
+chmod 770 /common/admin
+touch /common/admin
+chmod g+s /common/admin
+  g=group
+  s-sticky
+
+
+
+Sheduling Job
+
+Crontab -eu harry
+ 30 12 * * *  /bin/echo "hello"
+
+systemctl restart crond
+
+crontab -lu harry
+
+
+
+
+
+
+
+Kernal update
+
+vim /etc/yum.repos.d/kernel.repo
+  [321]
+  name=kernel.repo
+  baseurl=http://class...
+  enabled=1
+  gpgcheck=0
+  
+yum clean all
+yum repolist
+yum install kernel -y
+reboot
+
+getenforce
+
+uname -r
+
+
+
+
+
+
+
+
+
+
