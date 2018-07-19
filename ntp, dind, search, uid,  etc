@@ -1,0 +1,38 @@
+Configure NTP (Network Time Protocol)
+#vim /etc/chronyt.conf
+  #server     iburst
+  server  classroom.example.com iburst
+#
+#chronyc sorces -v
+#systemctl restart chronyd.service
+#
+#
+copy home directory from passwd to search.txt
+#cat /etc/passwd | grep "home" > /root/search.txt
+##
+#
+#
+new user UID 13265
+#useradd -u 1326 username
+#
+#
+#
+backup the /var/tmp as /root/test/tar/gz
+#tar -czvf /root/test/tar/gz /var/tmp
+#ls
+#
+#
+#
+#
+#
+#
+##
+#
+#
+#
+#
+#
+#
+#
+#
+#
