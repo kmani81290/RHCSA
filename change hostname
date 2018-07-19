@@ -1,4 +1,5 @@
-#set hostname server27.example.com
+#hostnamectl set-hostname dlp.srv.world
+# nmcli d 
 
 to check hostname 
 
