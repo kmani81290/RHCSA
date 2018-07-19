@@ -1,0 +1,45 @@
+createb one logical volume names database and it should be an 50 extend and assign the file system as ext3
+
+the datastore volume group extend should be 8mib/chunks 
+
+mount the logical volume under mount point
+
+#/mnt/database
+
+
+#fdisk /dev/vdb
+command:n
+select default:l
+adding logical partition
+
+command: t
+partition no : 6
+hex code: 8e
+
+command : w
+
+the partition table has been alerted 
+
+partprobe
+
+pvcreate /dev/vdb6
+vgcreate -s 8 datastore /dev/vdb6
+vgdisplay
+
+lvcreate -l 50 -n database datastore
+
+lvdisplay
+lvpath=/dev/datastore/database
+mkfs.ext3 /dev/datastore/database
+mkdir /mnt/database
+vim /etc/fstab
+
+/dev/datastore/ ext3  defaults  0 0
+
+#mount -a
+#df -hT
+
+
+
+#lvextend -l 100 /dev/datastore/database -r
+#lvextend -L 1G /dev/datastore/database -r
