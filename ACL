@@ -1,0 +1,63 @@
+#setfacl -m user:mani:rw /var/tmpfstab
+-------change owner
+#chown root /var/tmp/fstab
+-------change group
+#chgrp root /var/tmp/fstab
+#
+#getfacl /var/tmp/fstab
+#setfacl -m user:harry:rw- /var/tmp/fstab
+
+--------acl=> access control kist
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+
