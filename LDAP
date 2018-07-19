@@ -24,3 +24,78 @@ restart services
 su - ldapuser27
 
 exit
+
+
+
+configure autofs to automount the home directory
+
+start services
+#systemctl start autofs
+#systemctl enable autofs.service
+#systemctl start sssd
+#systemctl enable sssd
+#
+#vim /etc/auto.master
+          in last line
+/home/guests  /etc/auto.misc
+#
+#vim /etc/auto.misc
+ldapuser27  -rw,soft,intr classroom.com:/home/guests/ldapuser27
+
+----------given version 3 or 4 add line in after -rw,soft,intr,vers=3 or 4
+
+----------restart services
+
+#systemctl start autofs
+#systemctl enable autofs.service
+#systemctl start sssd
+#systemctl enable sssd
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
