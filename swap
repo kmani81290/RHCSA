@@ -1,0 +1,35 @@
+fdisk /dev/vdb
+
+command:n
+partition type: e
+enter
+enter
+10GB created
+
+command(m): n
+default(p): 1 (logical)
+sixe :+512M
+
+
+Type Command: t
+partition No:5
+Hex Code : 82
+
+save
+
+command(m): w
+
+partprobe
+
+mkswap /dev/vdb5 
+copy the UUID 
+
+
+vim /etc/fstab
+
+in the last line
+UUID  swap  swap  defaults  0 0
+
+free -m
+wswapon -a
+free -m
