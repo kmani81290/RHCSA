@@ -1,5 +1,5 @@
 #systemctl stop firewalld.service
-#systemxctl disable firewalld.service
+#systemctl disable firewalld.service
 
 SELINUX
 
