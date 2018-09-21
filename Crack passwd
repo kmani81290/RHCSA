@@ -1,0 +1,10 @@
+kernel
+press=e
+after UTF-8(space)rd.Break
+ctrl+x
+mount -o remount ,rw /sysroot/
+chroot /sysroot/
+passwd (type 2 times new password)
+touch /.autorelabel
+exit
+reboot
